@@ -38,3 +38,6 @@ class BaseModel:
             else:
                 dictionary[key] = value
         return dictionary
+
+    def pagination(self):
+        pass

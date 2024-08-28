@@ -4,10 +4,6 @@
  will not be shown, you would have to be root to see it all.)
 (Not all processes could be identified, non-owned process info
  will not be shown, you would have to be root to see it all.)
-Wed Aug 28 2024 11:15:18:334 GMT+0100 (WAT) -- Starting configuration console on http://localhost:45454
-Wed Aug 28 2024 11:15:20:328 GMT+0100 (WAT) -- [INFO] Started the BrowserStack Binary server on 45691, PID: 27108
-Wed Aug 28 2024 11:15:21:334 GMT+0100 (WAT) -- [SUCCESS] You can now access your local server(s) in our remote browser
-
-Wed Aug 28 2024 11:15:22:157 GMT+0100 (WAT) -- Press Ctrl-C to exit
-
-
+Wed Aug 28 2024 15:23:24:803 GMT+0100 (WAT) -- [WARNING] Skipping initialisation of configuration console because: port 45454 already in use by another Binary
+Wed Aug 28 2024 15:23:40:344 GMT+0100 (WAT) --  *** Error: Could not connect to local.browserstack.com due to Network issues. Please check your internet connection or if you are behind proxy please use our proxy options. For more details https://www.browserstack.com/local-testing#modifiers
+Wed Aug 28 2024 15:23:40:344 GMT+0100 (WAT) -- You can learn more about BrowserStack Binary flags by running ./BrowserStackLocal --help
