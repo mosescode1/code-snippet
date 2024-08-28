@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
 from flask_cors import CORS
 from config import Config
-from flask_bcrypt import BCrypt
+from flask_bcrypt import Bcrypt
 
 # !routes
 from .status.view import stats
@@ -18,7 +18,7 @@ cors = CORS(code_app, resources={r"/api/v1*": {"origins": "*"}})
 # Load configuration
 code_app.config.from_object(Config)
 
-bycrypt = BCrypt(code_app)
+bcrypt = Bcrypt(code_app)
 
 # Setup SQLAlchemy with a custom declarative base
 

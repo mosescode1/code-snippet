@@ -1,4 +1,4 @@
-from api import db, bycrypt
+from api import db, bcrypt
 from .Base_model.base_model import BaseModel
 from datetime import datetime
 
@@ -17,7 +17,7 @@ class User(db.Model, BaseModel):
     # relationship
     snippets = db.relationship('Snippet', backref="users", lazy=True)
 
-    def __init__(self, firstname, lastname, username, email, bio=None) -> None:
+    def __init__(self, firstname: str, lastname: str, username: str, email: str, bio=None) -> None:
         self.firstname = firstname
         self.lastname = lastname
         self.username = username
@@ -27,12 +27,12 @@ class User(db.Model, BaseModel):
     def __repr__(self) -> str:
         return f"User({self.username})"
 
-    def hash_password(self, password):
-        hd_pwd = bycrypt.generate_password_hash(password)
+    def hash_password(self, password: str) -> None:
+        hd_pwd = bcrypt.generate_password_hash(password).decode("utf-8")
         self.password = hd_pwd
 
-    def check_passsord(self, passsord):
-        return bycrypt.check_password_hash(self.password, passsord)
+    def check_passsord(self, passsord: str) -> bool:
+        return bcrypt.check_password_hash(self.password, passsord)
 
 
 class Snippet(db.Model, BaseModel):
@@ -44,7 +44,7 @@ class Snippet(db.Model, BaseModel):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
 
-    def __init__(self, snippet_type, snippet_code, user_id) -> None:
+    def __init__(self, snippet_type: str, snippet_code: str, user_id: int) -> None:
         self.snippet_type = snippet_type
         self.snippet_code = snippet_code
         self.user_id = user_id
