@@ -25,17 +25,20 @@ post_model = users.model("Create User", {
 })
 
 snippet_model = users.model("Create snippet", {
+    "id": fields.Integer,
+    "user_id": fields.Integer,
     "snippet_type": fields.String,
     "snippet_code": fields.String,
-    "user_snippets": fields.Url(endpoint="user_snippet", absolute=True)
 })
 
 
 get_snippet_model = users.model("Return all snippets", {
-    "id": fields.String,
+    "id": fields.Integer,
     "snippet_type": fields.String,
     "snippet_code": fields.String,
-    "user_snippets": fields.Url(endpoint="user_snippet", absolute=True)
+    "user_id": fields.Integer,
+    "user": fields.String(
+        attribute=lambda x: f"http://localhost:5000/users/{x['user_id']}")
 })
 
 
