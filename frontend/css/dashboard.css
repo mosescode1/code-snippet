@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* =======
+UTILITY STYLING
+*/
+
+a {
+	text-decoration: none;
+	color: black;
+	text-decoration-style: none;
+	-moz-text-decoration-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid black;
+}
+
+main {
+	display: flex;
+	padding-left: 5px;
+	background: black;
+	color: white;
+}
+
+.user_code_section {
+	width: 400px;
+	border-right: 1px solid rgb(255, 255, 255);
+	height: calc(100svh - 90px);
+}
+
+.attribution {
+	border-top: 1px solid rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+}
+
+pre {
+	margin: 10px;
+	overflow: unset;
+	border-radius: 10px;
+	border: 2px solid green;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}

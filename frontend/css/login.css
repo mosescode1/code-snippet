@@ -1,0 +1,66 @@
+.login {
+	position: fixed;
+	top: 0;
+	width: 100svw;
+	background: black;
+	height: 100svh;
+	left: 0;
+	display: grid;
+	place-content: center;
+	justify-content: center;
+	color: white;
+
+}
+
+.hidden {
+	display: none;
+}
+
+.login form {
+	width: 300px;
+}
+
+.login form div {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.login span {
+	color: red;
+}
+
+.login form input {
+	padding: 10px;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.btn {
+	display: grid;
+	place-content: center;
+}
+
+.login button {
+	background-color: white;
+	border: none;
+	padding: 7px 10px;
+	border-radius: 10px;
+	font-weight: 600;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	width: 100px;
+}
+
+.close__login {
+	font-size: 25px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}

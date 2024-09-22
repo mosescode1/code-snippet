@@ -9,14 +9,15 @@
 			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./css/login.css" />
 		<title>Code Snip</title>
-		<script defer src="index.js"></script>
+		<script defer type="module" src="index.js"></script>
 		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	<body>
 		<!-- Header Section -->
 		<header>
-			<span>Code Snip</span>
+			<span>Code Sniper</span>
 			<nav id="nav__links">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -24,7 +25,7 @@
 					<li><a href="#product">Product</a></li>
 					<li><a href="#about">About Us</a></li>
 					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#login">Login</a></li>
+					<li id="login"><a href="#login">Login</a></li>
 				</ul>
 			</nav>
 			<div id="hamburger">
@@ -171,6 +172,32 @@
 			</section>
 		</main>
 
+		<!-- Login -->
+		<section class="login hidden">
+			<div class="close__login">
+				<i class="fa-solid fa-x"></i>
+			</div>
+			<form class="login__form">
+				<div class="username">
+					<label for="username">username <span>*</span></label
+					><br />
+					<input
+						type="text"
+						name="username"
+						id="login__username"
+						placeholder="Username" />
+				</div>
+
+				<div>
+					<label for="password">password <span>*</span> </label>
+					<br />
+					<input type="password" name="password" id="login__password" />
+				</div>
+				<div class="btn">
+					<button id="loginBtn">Submit</button>
+				</div>
+			</form>
+		</section>
 		<!-- Footer Section -->
 		<footer>
 			<form action="">

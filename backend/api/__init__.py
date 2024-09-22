@@ -6,14 +6,17 @@ from flask_cors import CORS
 from config import Config
 from flask_bcrypt import Bcrypt
 
+
 # !routes
 from .status.view import stats
 from .users.view import users
+from .snippets.view import snippets
+from .auth.login import login
 # Initialize Flask app
 code_app = Flask(__name__)
 
 # Setup CORS
-cors = CORS(code_app, resources={r"/api/v1*": {"origins": "*"}})
+cors = CORS(code_app, resources={r"*": {"origins": "*"}})
 
 # Load configuration
 code_app.config.from_object(Config)
@@ -40,6 +43,8 @@ api = Api(code_app, title="CodeSnipper",
 # Add namespaces to the Api
 api.add_namespace(stats)
 api.add_namespace(users)
+api.add_namespace(snippets)
+api.add_namespace(login)
 
 # # Register the Blueprint with the Flask app
 code_app.register_blueprint(blueprint)

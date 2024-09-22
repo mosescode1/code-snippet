@@ -1,0 +1,412 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+		<link
+			rel="stylesheet"
+			as="style"
+			onload="this.rel='stylesheet'"
+			href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+		<title>Galileo Design</title>
+		<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+		<script defer src="./dashbord.js"></script>
+
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	</head>
+	<body>
+		<div
+			class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+			style="font-family: Manrope, 'Noto Sans', sans-serif">
+			<div class="layout-container flex h-full grow flex-col">
+				<div class="gap-1 px-6 flex flex-1 justify-center py-5">
+					<div class="layout-content-container flex flex-col w-80">
+						<div
+							class="flex h-full min-h-[700px] flex-col justify-between bg-[#111a22] p-4">
+							<div class="flex flex-col gap-4">
+								<div class="flex flex-col gap-2">
+									<div
+										class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#243647]">
+										<div
+											class="text-white"
+											data-icon="House"
+											data-size="24px"
+											data-weight="fill">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24px"
+												height="24px"
+												fill="currentColor"
+												viewBox="0 0 256 256">
+												<path
+													d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+											</svg>
+										</div>
+										<p class="text-white text-sm font-medium leading-normal">
+											Home
+										</p>
+									</div>
+									<div class="flex items-center gap-3 px-3 py-2">
+										<div
+											class="text-white"
+											data-icon="FileCode"
+											data-size="24px"
+											data-weight="regular">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24px"
+												height="24px"
+												fill="currentColor"
+												viewBox="0 0 256 256">
+												<path
+													d="M181.66,146.34a8,8,0,0,1,0,11.32l-24,24a8,8,0,0,1-11.32-11.32L164.69,152l-18.35-18.34a8,8,0,0,1,11.32-11.32Zm-72-24a8,8,0,0,0-11.32,0l-24,24a8,8,0,0,0,0,11.32l24,24a8,8,0,0,0,11.32-11.32L91.31,152l18.35-18.34A8,8,0,0,0,109.66,122.34ZM216,88V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88Zm-56-8h28.69L160,51.31Zm40,136V96H152a8,8,0,0,1-8-8V40H56V216H200Z"></path>
+											</svg>
+										</div>
+										<p class="text-white text-sm font-medium leading-normal">
+											Snippets
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ! My Snippets -->
+						<div class="px-4 py-3">
+							<label class="flex flex-col min-w-40 h-12 w-full">
+								<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+									<div
+										class="text-[#93adc8] flex border-none bg-[#243647] items-center justify-center pl-4 rounded-l-xl border-r-0"
+										data-icon="MagnifyingGlass"
+										data-size="24px"
+										data-weight="regular">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24px"
+											height="24px"
+											fill="currentColor"
+											viewBox="0 0 256 256">
+											<path
+												d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+										</svg>
+									</div>
+									<input
+										placeholder="Search snippets"
+										class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243647] focus:border-none h-full placeholder:text-[#93adc8] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+										value="" />
+								</div>
+							</label>
+						</div>
+						<h3
+							class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+							Your snippets
+						</h3>
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+
+							<!-- ! my snippet code collection -->
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Fetch data and display in React
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Create a custom hook
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									UseEffect example
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+						<div class="flex justify-stretch new__snippet">
+							<div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-start">
+								<button
+									class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#243647] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+									<span class="truncate snippetBtn">Add new snippet</span>
+								</button>
+								<!-- <button
+									class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#243647] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+									<span class="truncate">View all</span>
+								</button> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- ! main body  -->
+					<div
+						class="layout-content-container flex flex-col max-w-[960px] flex-1 main_body">
+						<!-- ! hEADER  -->
+						<div class="flex flex-wrap justify-between gap-3 p-4">
+							<p
+								class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
+								Explore snippets
+							</p>
+
+							<p
+								class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
+								<!-- // User Logged in -->
+								Welcome <span class="username">Anonymous</span>
+							</p>
+						</div>
+
+						<!-- ! SEARCH BOX -->
+						<div class="px-4 py-3">
+							<label class="flex flex-col min-w-40 h-12 w-full">
+								<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+									<div
+										class="text-[#93adc8] flex border-none bg-[#243647] items-center justify-center pl-4 rounded-l-xl border-r-0"
+										data-icon="MagnifyingGlass"
+										data-size="24px"
+										data-weight="regular">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24px"
+											height="24px"
+											fill="currentColor"
+											viewBox="0 0 256 256">
+											<path
+												d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+										</svg>
+									</div>
+									<input
+										placeholder="Search code snippets"
+										class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243647] focus:border-none h-full placeholder:text-[#93adc8] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+										value="" />
+								</div>
+							</label>
+						</div>
+						<!-- ! END OF SEARCH BOX -->
+
+						<!-- ! TRENDING -->
+						<div class="pb-3">
+							<div class="flex border-b border-[#344d65] px-4 gap-8">
+								<a
+									class="flex flex-col items-center justify-center border-b-[3px] border-b-[#1980e6] text-white pb-[13px] pt-4"
+									href="#">
+									<p
+										class="text-white text-sm font-bold leading-normal tracking-[0.015em]">
+										Trending
+									</p>
+								</a>
+							</div>
+						</div>
+
+						<!-- ! Each snippet box  -->
+						<!-- <div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									React useEffect hook
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Vue 3 composition API
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Express.js middleware
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Python class inheritance
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2">
+							<div
+								class="text-white flex items-center justify-center rounded-lg bg-[#243647] shrink-0 size-12"
+								data-icon="CodeSimple"
+								data-size="24px"
+								data-weight="regular">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24px"
+									height="24px"
+									fill="currentColor"
+									viewBox="0 0 256 256">
+									<path
+										d="M93.31,70,28,128l65.27,58a8,8,0,1,1-10.62,12l-72-64a8,8,0,0,1,0-12l72-64A8,8,0,1,1,93.31,70Zm152,52-72-64a8,8,0,0,0-10.62,12L228,128l-65.27,58a8,8,0,1,0,10.62,12l72-64a8,8,0,0,0,0-12Z"></path>
+								</svg>
+							</div>
+							<div class="flex flex-col justify-center">
+								<p
+									class="text-white text-base font-medium leading-normal line-clamp-1">
+									Docker compose file
+								</p>
+								<p
+									class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">
+									snippet of code
+								</p>
+							</div>
+						</div> -->
+						<!-- ! end of snippet box -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

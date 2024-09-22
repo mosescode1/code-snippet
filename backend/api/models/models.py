@@ -39,15 +39,17 @@ class Snippet(db.Model, BaseModel):
     __tablename__ = "snippets"
 
     id = db.Column(db.Integer, primary_key=True)
+    snippet_title = db.Column(db.String(100), nullable=False)
     snippet_type = db.Column(db.String(100), nullable=False)
     snippet_code = db.Column(db.Text, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
 
-    def __init__(self, snippet_type: str, snippet_code: str, user_id: int) -> None:
+    def __init__(self, snippet_title: str, snippet_type: str, snippet_code: str, user_id: int, ) -> None:
         self.snippet_type = snippet_type
         self.snippet_code = snippet_code
         self.user_id = user_id
+        self.snippet_title = snippet_title
 
     def __repr__(self) -> str:
         return f"Snippets({self.snippet_type}) User({self.user_id})"
